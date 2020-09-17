@@ -80,3 +80,71 @@
 .body {
   background-color: #4d4d4d;
 }
+
+.but_red {
+  background-color: red;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 28px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 5px;
+}
+
+
+.but_green {
+  background-color: green;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 28px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 5px;
+}
+
+.but_purp {
+  background-color: purple;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 28px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 5px;
+}
+
+.but_blue {
+  background-color: #00ccff;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 28px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 5px;
+}
+
+.but_dblue {
+  background-color: #0000b3;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 28px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 5px;
+}
+
+.but_orange {
+  background-color: #ff8000;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 12px 28px;
+  color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 5px;
+}
+
