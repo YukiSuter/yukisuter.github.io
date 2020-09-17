@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="requestdepreq.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>National Rail Departures</title>
+<link href="../../defaultstyle.css" rel="stylesheet" type="text/css">
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+	
+
+	
+</head>
+<body onload="startTime()">
+	<div class="navi">
+			<a href="../../index.html">
+				<h4 class="logo">
+				London Travel Information Board
+				</h4>
+			</a>
+	</div>
+	<div class="container" id="maincontainer">
+		<!-- Navigation -->
+		<br>
+		<h1 id="stationname" style="color:black">Please choose a departure station</h1>
+		
+		
+	  <form autocomplete="off" onsubmit="return false;">
+			<div class="autocomplete" style="width:300px;">
+				<input id="stationsearch" type="text" name="station" placeholder="Search for a station">
+			</div>
+			<input type="submit" onclick="makeDepartureRequest(stationsearch)" value="Search">
+		<input type="submit" onclick="makeDepartureRequest(stationsearch)" value="Refresh">
+		</form>
+		
+		
+		<button onclick="makeDepartureRequest(stationsearch)" style="float:right;padding:10px">Refresh</button>
+		<b id="clock" style="float:right;padding:10px;font-size:40px;font-weight: bold;">Time</b>
+		<br>
+		<div id="mestitle" style="float:left;padding:10px;font-size:40px;font-weight: bold;">&nbsp;</div>
+		<br>
+		<div id="mes0" style="float:left;padding:10px;font-size:20px">&nbsp;</div>
+		<br>
+		<div id="mes1" style="float:left;padding:10px;font-size:20px">&nbsp;</div>
+		<br>
+	  <div id="mes2" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes3" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes4" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes5" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes6" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes7" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes8" style="float:left;padding:10px;font-size:20px"></div>
+		<br>
+		<div id="mes8" style="float:left;padding:10px;font-size:20px"></div>
+		<br />
+			<div class="copyright">&copy;2020- <strong>YUKI CHRISTOPHER SUTER</strong></div>
+		</div>
+	<script>autocomplete(document.getElementById("stationsearch"))</script>
+	</body>
+</html>
