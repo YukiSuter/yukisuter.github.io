@@ -30,8 +30,16 @@
           flex-shrink: 0;
 }
 
+.demo-crumbs {
+  margin-top: -10px;
+  color: #ffffff;	
+}
+
+
+
 .demo-header .mdl-layout__header-row {
   padding-left: 40px;
+  background-color: #404040;
 }
 
 .demo-container {
@@ -44,6 +52,7 @@
   border-radius: 2px;
   padding: 80px 56px;
   margin-bottom: 80px;
+  background-color: #404040;
 }
 
 .demo-layout.is-small-screen .demo-content {
@@ -52,6 +61,7 @@
 
 .demo-content h3 {
   margin-top: 48px;
+  color: #ffffff;
 }
 
 .demo-footer {
@@ -60,4 +70,9 @@
 
 .demo-footer .mdl-mini-footer--link-list a {
   font-size: 13px;
+}
+
+.names {
+  margin-top: 48px;
+  color: #ffffff;
 }
