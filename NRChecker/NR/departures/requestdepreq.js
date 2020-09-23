@@ -112,6 +112,22 @@ function autocomplete(inp) {
 
 // CLOCK START
 function startTime() {
+    var Http = new XMLHttpRequest
+
+    var lookup_station = "WDU"
+
+
+    var national_rail_api_key = '55f26e55-359a-4e6f-aa6c-f0d5e9e1ee19'
+
+    var url = "https://cors-escapey.herokuapp.com/https://api.departureboard.io/api/v2.0/getDeparturesByCRS/" + lookup_station + "/?apiKey=" + national_rail_api_key;
+  
+
+    Http.open('GET', url, true)
+
+    Http.send() 
+
+
+
 	var today = new Date();
 	var h = today.getHours();
 	var m = today.getMinutes();
