@@ -119,7 +119,7 @@ function startTime() {
 
     var national_rail_api_key = '55f26e55-359a-4e6f-aa6c-f0d5e9e1ee19'
 
-    var url = "https://cors-escapey.herokuapp.com/https://api.departureboard.io/api/v2.0/getDeparturesByCRS/" + lookup_station + "/?apiKey=" + national_rail_api_key;
+    var url = "https://cors-escapey.herokuapp.com/https://huxley-ys.herokuapp.com/departures" + lookup_station + "/?apiKey=" + national_rail_api_key;
   
 
     Http.open('GET', url, true)
