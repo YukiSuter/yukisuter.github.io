@@ -27,6 +27,14 @@
   </div>
 </div>
 
+<form autocomplete="off" onsubmit="return false;">
+  <div class="autocomplete" style="width:300px;">
+    <input id="stationsearch" type="text" name="station" placeholder="Search for a station">
+  </div>
+  <input type="submit" onclick="getData()" value="Search">
+<input type="submit" onclick="getData()" value="Refresh">
+</form>
+
 <input id="CRS">
 <button onclick="getData()">Test</button>
 
@@ -36,6 +44,6 @@
 
 
 
-
+<script>autocomplete(document.getElementById("stationsearch"))</script>
 </body>
 </html>
