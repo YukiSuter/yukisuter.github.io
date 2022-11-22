@@ -36,7 +36,7 @@ function addOptions(arr) {
         if (arr.hasOwnProperty(key)) {
             var option = document.createElement('option');
             option.innerHTML = key
-            option.value = value
+            option.value = arr[key]
             list.appendChild(option);
         }
     }
