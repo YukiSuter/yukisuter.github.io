@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="styles.css">
   <script src="newHDScript.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -27,15 +27,8 @@
   </div>
 </div>
 
-<form autocomplete="off" onsubmit="return false;">
-  <div class="autocomplete" style="width:300px;">
-    <input id="stationsearch" type="text" name="station" placeholder="Search for a station">
-  </div>
-  <input type="submit" onclick="getData()" value="Search">
-<input type="submit" onclick="getData()" value="Refresh">
-</form>
-
-<input id="CRS">
+<input type="text" maxlength="30" list="stationList" id="CRS" name="stationSearchBox" placeholder="search stations" autofocus autocomplete="on">
+<datalist id="stationList"></datalist>
 <button onclick="getData()">Test</button>
 
 <div id="boardContainer">
@@ -43,7 +36,6 @@
 </div>
 
 
-
-<script>autocomplete(document.getElementById("stationsearch"))</script>
+<script>window.onload=autocomplete;</script>
 </body>
 </html>
