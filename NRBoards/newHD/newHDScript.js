@@ -7,10 +7,26 @@ function checktable() {
 }
 
 function createTable() {
-	const body = document.body,
-        tbl = document.createElement('table');
-    tbl.style.width = '100px';
-    tbl.style.border = '1px solid black';
+	// creates a <table> element and a <tbody> element
+    const tbl = document.createElement("table");
+    const tblBody = document.createElement("tbody");
+    
+    for (let i = 0; i < 23; i++) {
+        // creates a table row
+        const row = document.createElement("tr");
+    
+        for (let j = 0; j < services.length; j++) {
+          // Create a <td> element and a text node, make the text
+          // node the contents of the <td>, and put the <td> at
+          // the end of the table row
+          const cell = document.createElement("td");
+          const cellText = document.createTextNode(`cell in row ${i}, column ${j}`);
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+        }
+    
+        // add the row to the end of the table body
+        tblBody.appendChild(row);
 }
 
 function getData() {
