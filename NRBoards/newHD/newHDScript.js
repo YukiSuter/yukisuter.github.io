@@ -32,8 +32,8 @@ function autocomplete() {
 function addOptions(arr) {
     var list = document.getElementById("stationList")
 
-    for (var key in rr) {
-        if (rr.hasOwnProperty(key)) {
+    for (var key in arr) {
+        if (arr.hasOwnProperty(key)) {
             var option = document.createElement('option');
             option.innerHTML = key
             optopm.value = value
