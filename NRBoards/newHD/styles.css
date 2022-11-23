@@ -217,3 +217,64 @@
   font-family: "Arial";
   font-size: 15px
 }
+
+
+[class^="timeCa"] {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+.timeCa1 {
+  top: 180px;
+}
+
+.timeCa2 {
+  top: 210px;
+}
+
+.timeCa3 {
+  top: 240px;
+}
+
+.timeCa4 {
+  top: 270px;
+}
+
+.timeCa5 {
+  top: 300px;
+}
+
+.timeCa6 {
+  top: 330px;
+}
+
+.timeCa7 {
+  top: 360px;
+}
+
+.timeCa8 {
+  top: 390px;
+}
+
+.timeCa9 {
+  top: 420px;
+}
+
+.timeCa10 {
+  top: 450px;
+}
+
+.timeCa11 {
+  top: 480px;
+}
+
+.timeCa12 {
+  top: 510px;
+}
+
+.timeCa13 {
+  top: 540px;
+}

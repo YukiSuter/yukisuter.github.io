@@ -10,7 +10,7 @@ var imgSources = {ready:"images/platformSet.png", wait:"images/platformWait.png"
 
 var myImages = [], img;
 
-var rowLabels = ["time", "destination", "via", "platformLabel", "platform", "callingAtLabel", "ca0", "ca1", "ca2", "ca3", "ca4", "ca5", "ca6", "ca7", "ca8", "ca9", "ca10", "ca11", "ca12", "ca13", "message", "coaches", "logo"]
+var rowLabels = ["time", "destination", "via", "platformLabel", "platform", "callingAtLabel", "ca0", "ca1", "ca2", "ca3", "ca4", "ca5", "ca6", "ca7", "ca8", "ca9", "ca10", "ca11", "ca12", "ca13", "message", "coaches", "logo", "timeCa1", "timeCa2", "timeCa3", "timeCa4", "timeCa5", "timeCa6", "timeCa7", "timeCa8", "timeCa9", "timeCa10", "timeCa11", "timeCa12", "timeCa13"]
 
 
 // SEARCH BOX
@@ -83,6 +83,12 @@ function getTrainData(num) {
     xhrTrain.send();
 }
 
+function timeHumanise(tim) {
+    var newString = tim.toString().slice(0,2) + ":" + tim.toString().slice(2,4)
+
+    return newString
+}
+
 function processData(req) {
     responseParsed = JSON.parse(req.responseText)
     
@@ -101,6 +107,10 @@ function processTrainData(onTrain, reqTrain) {
     console.log("Processed Train Data")
     var iteratedPast = 0;
     console.log(stationsResponseParsed)
+
+    image = document.getElementById("train" + onTrain.toString() + "image")
+    image.onclick = function() {window.open("https://www.realtimetrains.co.uk/service/gb-nr:" + stationsResponseParsed.serviceUid + "/" + d.getFullYear().toString() + "-" + (d.getMonth()+1).toString() + "-" + d.getDate().toString() , '_blank').focus()};
+
     for (let j=0; j < stationsResponseParsed["locations"].length; j++) {
         console.log(j)
         if (j != 0) {
@@ -113,6 +123,7 @@ function processTrainData(onTrain, reqTrain) {
             console.log("Captured Station")
             console.log("train" + onTrain.toString() + "ca" + (j-iteratedPast+1).toString())
             document.getElementById("train" + onTrain.toString() + "ca" + (j-iteratedPast+1).toString()).innerHTML = stationsResponseParsed["locations"][j]["description"]
+            document.getElementById("train" + onTrain.toString() + "timeCa" + (j-iteratedPast+1).toString()).innerHTML = timeHumanise(stationsResponseParsed["locations"][j]["realtimeArrival"])
         }
     }
 
@@ -179,7 +190,7 @@ function fillTable() {
     for (i = 0; i < services.length; i++) {
         
         console.log("train" + i.toString() + "time")
-        document.getElementById("train" + i.toString() + "time").innerHTML = services[i]["locationDetail"]["realtimeDeparture"] //Time
+        document.getElementById("train" + i.toString() + "time").innerHTML = timeHumanise(services[i]["locationDetail"]["realtimeDeparture"]) //Time
         document.getElementById("train" + i.toString() + "destination").innerHTML = services[i]["locationDetail"]["destination"][0]["description"] //Destination
 
         document.getElementById("train" + i.toString() + "toc").src = imgSources["toc"] + "/" + services[i]["atocCode"] + ".png"
