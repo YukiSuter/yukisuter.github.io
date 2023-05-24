@@ -48,7 +48,7 @@ function addOptions(arr) {
 
 
 function getData() {
-    var url = "https://cors-anywhere.herokuapp.com/http://api.rtt.io/api/v1/json/search/" + document.getElementById("CRS").value;
+    var url = "https://cors-escapes.herokuapp.com/http://api.rtt.io/api/v1/json/search/" + document.getElementById("CRS").value;
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url);
@@ -65,7 +65,7 @@ function getData() {
 }
 
 function getTrainData(num) {
-    var urlTrain = "https://cors-anywhere.herokuapp.com/http://api.rtt.io/api/v1/json/service/" + services[num]["serviceUid"] + "/" + d.getFullYear().toString() + "/" + (d.getMonth()+1).toString() + "/" + d.getDate().toString() ;
+    var urlTrain = "https://cors-escapes.herokuapp.com/http://api.rtt.io/api/v1/json/service/" + services[num]["serviceUid"] + "/" + d.getFullYear().toString() + "/" + (d.getMonth()+1).toString() + "/" + d.getDate().toString() ;
     console.log(urlTrain)
     var xhrTrain = new XMLHttpRequest();
     xhrTrain.open("GET", urlTrain);
