@@ -45,7 +45,11 @@ function addOptions(arr) {
 //////////////////////////////////////////////////////////
 
 
-
+function leadingZeros(num, size) {
+    num = num.toString();
+    while (num.length < size) num = "0" + num;
+    return num;
+}
 
 function getData() {
     var url = "https://cors-escapes.herokuapp.com/http://api.rtt.io/api/v1/json/search/" + document.getElementById("CRS").value;
@@ -65,7 +69,9 @@ function getData() {
 }
 
 function getTrainData(num) {
-    var urlTrain = "https://cors-escapes.herokuapp.com/http://api.rtt.io/api/v1/json/service/" + services[num]["serviceUid"] + "/" + d.getFullYear().toString() + "/" + (d.getMonth()+1).toString() + "/" + d.getDate().toString() ;
+	
+	
+    var urlTrain = "https://cors-escapes.herokuapp.com/http://api.rtt.io/api/v1/json/service/" + services[num]["serviceUid"] + "/" + d.getFullYear().toString() + "/" + leadingZeros(((d.getMonth()+1)).toString(),2) + "/" + leadingZeros(d.getDate().toString(),2) ;
     console.log(urlTrain)
     var xhrTrain = new XMLHttpRequest();
     xhrTrain.open("GET", urlTrain);
