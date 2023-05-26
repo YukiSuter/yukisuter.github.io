@@ -16,7 +16,7 @@ var rowLabels = ["time", "destination", "via", "platformLabel", "platform", "cal
 // SEARCH BOX
 function autocomplete() {
     var url, stationOption;
-    url = 'js/stationcodes.json';
+    url = 'stationcodes.json';
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
