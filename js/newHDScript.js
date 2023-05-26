@@ -6,7 +6,7 @@ var stationsProcessed = false;
 
 const d = new Date();
 
-var imgSources = {ready:"images/newHD/platformSet.png", wait:"images/newHD/platformWait.png", toc:"images/newHD/TOCLogos/"}
+var imgSources = {ready:"../../images/newHD/platformSet.png", wait:"../../images/newHD/platformWait.png", toc:"../../images/newHD/TOCLogos/"}
 
 var myImages = [], img;
 
