@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgb(243, 243, 243);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+ 
+/********************************************************* NAVBAR *********************************************************/
+
+
+.navbar {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding: 1em 20%;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    
+    z-index: 1000000;
+
+    /* border-style: none none solid none;
+    border-color: black;
+    border-width: 0.05em; */
+}
+
+.nav-links a {
+    color: black;
+}
+
+.nav-links a:hover {
+    color: teal;
+}
+
+.navLogo {
+
+    padding: 5px 0px;
+}
+
+.navLogo a {
+    font-size: 20px;
+    font-weight: bold;
+
+    color:rgb(80, 80, 80);
+}
+
+.navLogo a:hover {
+    font-size: 20px;
+    font-weight: bold;
+
+    color:teal;
+}
+
+#navGrad {
+    position: fixed;
+    height: 0.5em;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(100,100,100,1), rgba(100,100,100,0));
+    top: 4em;
+
+    z-index: 1000000;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    color: teal;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.code-examples {
+    position: relative;
+}
+
+.examples-dropdown {
+    background-color: white;
+    padding: 0.5em 0;
+    position: absolute;
+    left: -0.3em;
+    display: none;
+    width: 14.5em;
+}
+
+.examples-dropdown li + li {
+    margin-top: 10px;
+}
+
+.examples-dropdown li {
+    padding: 0.5em 1em;
+}
+
+.examples-dropdown li:hover {
+    background-color: white;
+}
+
+.code-examples:hover .examples-dropdown {
+    display: block;
+}
+
+/********************************************************* MAIN *********************************************************/
+
+.main-content {
+    background-color: rgb(243, 243, 243);
+    padding: 2em 20%;
+    height: auto;
+    width: 100%;
+}
+
+.main-content .text {
+    font-size: 20px;
+    line-height: 1.8em;
+    color: rgb(80, 80, 80);
+    margin: 2em 0px;
+}
+
+.footer {
+    background-color: rgb(85, 85, 85);
+    padding: 2em 20%;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+}
+
+#pdfObject {
+    height:60em;
+}
+
+.spacer1emHigh {
+    height: 1em;
+}
+.spacer2emHigh {
+    height: 2em;
+}
+.spacer3emHigh {
+    height: 3em;
+}
+.spacer4emHigh {
+    height: 4em;
+}
+.spacer5emHigh {
+    height: 5em;
+}
