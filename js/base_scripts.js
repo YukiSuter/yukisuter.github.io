@@ -3,6 +3,14 @@ navGrad = false;
 
 // Get the navbar
 
+$(function () {
+    var includes = $('[data-include]')
+    $.each(includes, function () {
+        var file = '/common-html/' + $(this).data('include') + '.html'
+        $(this).load(file)
+    })
+})
+
 function getCssValuePrefix()
 {
     var rtrnVal = '';//default to standard syntax
@@ -56,3 +64,20 @@ function scrollGradient() {
     console.log(window.pageYOffset + " - " + $('.navbar').is(':animated'));
 }
 
+function hamburgerDetection() {
+    navlogoText = document.getElementById('navLogoText');
+    if ((navlogoText.offsetHeight / navlogoText.style.lineHeight) > 0.9) {
+        navlogoText.style.display = 'none';
+    } else {
+        navlogoText.style.display = 'block';
+    
+    }
+
+    console.log("changedHamburger");
+}
+
+function loadHamburger(){
+    window.onresize = hamburgerDetection();
+}
+
+window.onload = loadHamburger();
