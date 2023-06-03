@@ -1,0 +1,214 @@
+h4 {
+  padding-top: 1.5em;
+}
+
+/*************************************************************************** FOR TABLE ***************************************************************************/
+
+.row {
+  overflow-x: scroll;
+  display: inline-block;
+}
+
+.column {
+  width: 300px;
+  float: left;
+  position: relative;
+}
+
+.backImage {
+  position: relative;
+  width: 100%;
+}
+
+.time {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 20px
+}
+
+.destination {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 25px
+}
+
+.platformLabel {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+.platform {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 35px
+}
+
+.tocImage {
+
+  position: absolute;
+  top: 650px;
+  left: 0px;
+  padding:3%;
+  width:80%
+}
+
+.callingAtLabel {
+  color: rgb(255, 217, 0);
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+[class^="ca"] {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+.callingAtLabel {
+  color: rgb(255, 217, 0);
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+.ca1 {
+  top: 180px;
+}
+
+.ca2 {
+  top: 210px;
+}
+
+.ca3 {
+  top: 240px;
+}
+
+.ca4 {
+  top: 270px;
+}
+
+.ca5 {
+  top: 300px;
+}
+
+.ca6 {
+  top: 330px;
+}
+
+.ca7 {
+  top: 360px;
+}
+
+.ca8 {
+  top: 390px;
+}
+
+.ca9 {
+  top: 420px;
+}
+
+.ca10 {
+  top: 450px;
+}
+
+.ca11 {
+  top: 480px;
+}
+
+.ca12 {
+  top: 510px;
+}
+
+.ca13 {
+  top: 540px;
+}
+
+.message {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 570px;
+  left: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+
+[class^="timeCa"] {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 10px;
+  font-family: "Arial";
+  font-size: 15px
+}
+
+.timeCa1 {
+  top: 180px;
+}
+
+.timeCa2 {
+  top: 210px;
+}
+
+.timeCa3 {
+  top: 240px;
+}
+
+.timeCa4 {
+  top: 270px;
+}
+
+.timeCa5 {
+  top: 300px;
+}
+
+.timeCa6 {
+  top: 330px;
+}
+
+.timeCa7 {
+  top: 360px;
+}
+
+.timeCa8 {
+  top: 390px;
+}
+
+.timeCa9 {
+  top: 420px;
+}
+
+.timeCa10 {
+  top: 450px;
+}
+
+.timeCa11 {
+  top: 480px;
+}
+
+.timeCa12 {
+  top: 510px;
+}
+
+.timeCa13 {
+  top: 540px;
+}
